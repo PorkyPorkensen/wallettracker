@@ -61,7 +61,7 @@ a {
   align-items: center;
   justify-content: center;
   max-width: 800px;
-  margin: 1rem auto;
+  margin: 4rem auto;
 }
 
 .otherTkns { 
@@ -144,12 +144,12 @@ a {
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   width: 200px;
   text-align: center;
-  height: 260px;
+  height: 290px;
 }
 .coinLogo { 
   height: 60px;
   width: 60px;
-  margin-bottom: 1rem;
+  margin-top: 2em;
   border-radius: 50%;
  }
 .App-header {

@@ -1,4 +1,4 @@
-BIO
+BIO (add limitations)
 ADD NFTEYES OR SMTH TRACKER
 ADD FOOTER
 LOGO/HEADER AREA
@@ -8,3 +8,7 @@ CLICK ON COIN -> MODAL WHERE U CAN BE LINKED TO BIRDEYE/TV/RAY TO TRADE?
 ANIMATIONS ON LOTTIE?
 DESKTOP/TABLET STYLING
 GRAPHS
+Loading state (lottie)
+seems to be a bug with 3 line titles (pudgy)
+make big numbers look cleaner
+batching tokens
