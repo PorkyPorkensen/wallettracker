@@ -60,7 +60,7 @@ a {
   gap: 1rem ;
   align-items: center;
   justify-content: center;
-  max-width: 800px;
+  max-width: 1200px;
   margin: 4rem auto;
 }
 
@@ -96,7 +96,8 @@ a {
     flex-direction: column;
     width: 300px;
     margin: 1rem auto;
-    border: 1px solid #00FFA3;
+  border: 2px solid #00FFA3;
+  box-shadow: 0 0 10px #00ffa3, 0 0 20px #9945ff66;
     border-radius: 16px;
     text-align: center;
       word-wrap: break-word;   /* Wrap long words */
@@ -104,15 +105,28 @@ a {
   white-space: normal;     /* Allow line breaks */
 }
 .searchBtn {
-  display: flex;
-  background-color: #00FFA3;
-  font-size: 1.25em;
-  padding: 1rem 2rem;
-  border-radius: 16px;
-  border: 1px solid #2e2e2e;
-  margin: 1.5em auto;
-  color:#9945FF;
+  background: linear-gradient(135deg, #00FFA3, #9945FF);
+  color: black;
+  font-family: 'Orbitron', sans-serif; /* Or your current neon font */
+  font-weight: bold;
+  font-size: 1rem;
+  padding: 0.75rem 2rem;
+  border: 2px solid #00FFA3;
+  border-radius: 12px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  box-shadow: 0 0 10px #00ffa3, 0 0 20px #9945ff66;
+  cursor: pointer;
+  display: block;
+  margin: 2rem auto;
+}
 
+.searchBtn:hover {
+  background: black;
+  color: #00FFA3;
+  box-shadow: 0 0 10px #00FFA3, 0 0 30px #00FFA3;
+  transform: scale(1.05);
 }
 .abt {
   border: 2px solid #9945FF;
@@ -136,15 +150,15 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: 1px solid #3f3f3f;
+  border: 1px solid #00FFA3;
   border-radius: 8px;
   padding: 1rem;
   margin-bottom: 1rem;
   background: #000000ab;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  width: 200px;
+  box-shadow: 0 0 10px #00ffa3, 0 0 20px #9945ff66;
+  width: 250px;
   text-align: center;
-  height: 290px;
+  height: 350px;
 }
 .coinLogo { 
   height: 60px;
@@ -167,7 +181,45 @@ a {
   color: #61dafb;
 }
 
+.modalBackdrop {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.85);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
 
+.modalContent {
+  background: #121212;
+  border: 2px solid #00FFA3;
+  border-radius: 12px;
+  padding: 2rem;
+  color: #eaeaea;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 0 15px rgba(0,255,163,0.3);
+}
+
+.modalContent a {
+  color: #00FFA3;
+  text-decoration: underline;
+  margin: 0.25rem 0;
+  display: block;
+}
+
+.closeModal {
+  margin-top: 1.5rem;
+  background: #00FFA3;
+  color: #000;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+}
 
 @keyframes App-logo-spin {
   from {
